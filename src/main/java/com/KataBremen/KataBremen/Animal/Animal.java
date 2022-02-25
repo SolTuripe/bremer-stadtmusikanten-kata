@@ -29,5 +29,11 @@ public abstract class Animal {
         this.isSinging = false;
     }
 
+    public String message() {
+        if (this.isSinging) {
+            return "The " + this.name + " is singing " + this.sound;
+        }
+        return "The " + this.name + " isn't siinging";
+    }
 
 }
