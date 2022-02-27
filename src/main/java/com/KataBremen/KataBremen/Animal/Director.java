@@ -15,5 +15,10 @@ public class Director {
         }
     }
 
+    public void stopSimging() {
+        for (Animal animal : chorus) {
+            animal.notSing();
+        }
+    }
 
 }

@@ -91,6 +91,19 @@ public class BremenTest {
         assertEquals("The donkey Mr. Bruno is singing iooooioooo", chorus.get(1).message());
     }
 
+    @Test
+    void TheDirectorOrdersToStopSinging() {
+        ArrayList<Animal> chorus = new ArrayList();
+        chorus.add(new Cat("Tobi", "Miau"));
+        chorus.add(new Donkey("Mr. Bruno", "iooooioooo"));
 
+        Director director = new Director(chorus);
+
+        director.startSinging();
+        director.stopSimging();
+
+        assertEquals("The cat Tobi isn't singing", chorus.get(0).message());
+        assertEquals("The donkey Mr. Bruno isn't singing", chorus.get(1).message());
+    }
 
 }
