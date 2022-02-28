@@ -1,11 +1,12 @@
 package com.KataBremen.KataBremen.Animal;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Director {
-    ArrayList<Animal> chorus = new ArrayList();
+    List<Animal> chorus = new ArrayList();
 
-    public Director(ArrayList<Animal> chorus) {
+    public Director(List<Animal> chorus) {
         this.chorus = chorus;
     }
 
@@ -15,7 +16,7 @@ public class Director {
         }
     }
 
-    public void stopSimging() {
+    public void stopSinging() {
         for (Animal animal : chorus) {
             animal.notSing();
         }

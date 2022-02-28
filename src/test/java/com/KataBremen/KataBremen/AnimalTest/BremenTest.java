@@ -11,6 +11,7 @@ import com.KataBremen.KataBremen.Animal.Donkey;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BremenTest {
 
@@ -79,7 +80,7 @@ public class BremenTest {
 
     @Test
     void TheDirectorOrdersToSing() {
-        ArrayList<Animal> chorus = new ArrayList();
+        List<Animal> chorus = new ArrayList();
         chorus.add(new Cat("Tobi", "Miau"));
         chorus.add(new Donkey("Mr. Bruno", "iooooioooo"));
 
@@ -93,14 +94,14 @@ public class BremenTest {
 
     @Test
     void TheDirectorOrdersToStopSinging() {
-        ArrayList<Animal> chorus = new ArrayList();
+        List<Animal> chorus = new ArrayList();
         chorus.add(new Cat("Tobi", "Miau"));
         chorus.add(new Donkey("Mr. Bruno", "iooooioooo"));
 
         Director director = new Director(chorus);
 
         director.startSinging();
-        director.stopSimging();
+        director.stopSinging();
 
         assertEquals("The cat Tobi isn't singing", chorus.get(0).message());
         assertEquals("The donkey Mr. Bruno isn't singing", chorus.get(1).message());
