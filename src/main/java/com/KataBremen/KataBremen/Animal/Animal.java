@@ -33,7 +33,7 @@ public abstract class Animal {
         if (this.isSinging) {
             return "The " + this.name + " is singing " + this.sound;
         }
-        return "The " + this.name + " isn't siinging";
+        return "The " + this.name + " isn't singing";
     }
 
 }

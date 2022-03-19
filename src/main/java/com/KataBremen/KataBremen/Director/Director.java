@@ -1,4 +1,6 @@
-package com.KataBremen.KataBremen.Animal;
+package com.KataBremen.KataBremen.Director;
+
+import com.KataBremen.KataBremen.Animal.Animal;
 
 import java.util.ArrayList;
 import java.util.List;
