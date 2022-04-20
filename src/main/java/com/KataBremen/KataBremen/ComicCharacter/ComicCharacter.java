@@ -3,7 +3,7 @@ package com.KataBremen.KataBremen.ComicCharacter;
 import com.KataBremen.KataBremen.Singing;
 
 public class ComicCharacter implements Singing {
-    protected boolean isSinging = false;
+    protected boolean isSinging = true;
 
     public boolean isSinging() {
         return isSinging;
@@ -19,6 +19,9 @@ public class ComicCharacter implements Singing {
 
     @Override
     public String message() {
-        return null;
+        if(this.isSinging) {
+            return "scarletWitch is singing";
+        }
+        return "scarletWitch isn't singing";
     }
 }
