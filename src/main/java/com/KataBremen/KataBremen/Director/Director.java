@@ -1,26 +1,30 @@
 package com.KataBremen.KataBremen.Director;
 
-import com.KataBremen.KataBremen.Animal.Animal;
+import com.KataBremen.KataBremen.Singing;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Director {
-    List<Animal> chorus = new ArrayList();
+    private ArrayList<Singing> chorus;
 
-    public Director(List<Animal> chorus) {
+    public Director(ArrayList<Singing> chorus) {
         this.chorus = chorus;
+        this.orderStartSingChorus();
+        this.orderStopSingChorus();
     }
 
-    public void startSinging() {
-        for (Animal animal : chorus) {
-            animal.isSinging();
+    public Director() {
+    }
+
+    public void orderStartSingChorus() {
+        for (Singing singer : chorus) {
+            singer.startSinging();
         }
     }
 
-    public void stopSinging() {
-        for (Animal animal : chorus) {
-            animal.notSing();
+    public void orderStopSingChorus() {
+        for (Singing singer : chorus) {
+            singer.stopSinging();
         }
     }
 

@@ -22,7 +22,7 @@ public class BremenTest {
     void AtFirstCatsDoesNotSing(){
         Cat cat = new Cat();
 
-        cat.notSing();
+        cat.stopSinging();
         assertFalse(cat.isSinging());
     }
 
@@ -38,7 +38,7 @@ public class BremenTest {
         Cat cat = new Cat();
 
         cat.isSinging();
-        cat.notSing();
+        cat.stopSinging();
         assertFalse(cat.isSinging());
     }
 
@@ -54,7 +54,7 @@ public class BremenTest {
     void WhenCatIsNotSingSendsANotSingingMessage() {
         Cat cat = new Cat("Tobi", "Miau");
 
-        cat.notSing();
+        cat.stopSinging();
         assertThat(cat.message(), equalTo("The cat Tobi isn't singing"));
     }
 
@@ -70,7 +70,7 @@ public class BremenTest {
     void WhenDonkeyIsNotSingSendsANotSingingMessage() {
         Donkey donkey = new Donkey("Mr. Bruno", "iooooioooo");
 
-        donkey.notSing();
+        donkey.stopSinging();
         assertThat(donkey.message(), equalTo("The donkey Mr. Bruno isn't singing"));
     }
 

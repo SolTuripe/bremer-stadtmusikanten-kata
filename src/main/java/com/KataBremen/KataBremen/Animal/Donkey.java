@@ -15,5 +15,4 @@ public class Donkey extends Animal {
         }
         return "The donkey " + this.name + " isn't singing";
     }
-
 }

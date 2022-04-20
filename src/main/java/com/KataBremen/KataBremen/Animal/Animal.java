@@ -1,6 +1,8 @@
 package com.KataBremen.KataBremen.Animal;
 
-public abstract class Animal {
+import com.KataBremen.KataBremen.Singing;
+
+public abstract class Animal implements Singing {
     protected String name;
     protected String sound;
     protected Boolean isSinging = true;
@@ -25,8 +27,12 @@ public abstract class Animal {
         return isSinging;
     }
 
-    public void notSing() {
-        this.isSinging = false;
+    public boolean startSinging() {
+        return this.isSinging = true;
+    }
+
+    public boolean stopSinging() {
+       return this.isSinging = false;
     }
 
     public String message() {

@@ -15,5 +15,4 @@ public class Cat extends Animal {
         }
         return "The cat " + this.name + " isn't singing";
     }
-
 }
