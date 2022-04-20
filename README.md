@@ -1,10 +1,17 @@
 # Bremer Stadtmusikanten kata 🎶
 
-The goal of this kata is also to practice the basic principles of OOP such as: Abstraction, Encapsulation, Inheritance, Polymorphism and Interfaces using TDD
+The goal of this kata is also to practice the basic principles of OOP such as: Abstraction, Encapsulation, Inheritance, Polymorphism and Interfaces using TDD \
 
+🚥 Test → Red → Green → Refactor 🔁
 ## Develop 📌
 
-Clone/fork this repo or create your own using spring initializr
+```
+Start a project at Spring Initializr
+Or clone/fork this repo
+Run the tests to see them pass!
+```
+##Tests ✅
+
 
 ## Rules 📋
 
@@ -21,3 +28,4 @@ The Bremen Town Musicians are a choir of little animals that are left to sing to
 
 - [Spring Boot](https://spring.io/projects/spring-boot)  
 - [IntelliJ Idea](https://www.jetbrains.com/idea/) or any other IDE you like
+- JAVA
