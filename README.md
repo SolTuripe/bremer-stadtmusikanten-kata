@@ -14,19 +14,19 @@ Run the tests to see them pass!
 
 ### Animal Test
 <p align="center">
-<img src="./assets/animalTest.png" width=80%>
+<img src="./assets/animalTest.png" width=55%>
 </p>
 
 ### Director Test
 
 <p align="center">
-<img src="./assets/directorTest.png" width=80%>
+<img src="./assets/directorTest.png" width=55%>
 </p>
 
 ### Comic Character Test
 
 <p align="center">
-<img src="./assets/comicCharacter.png" width=80%>
+<img src="./assets/comicCharacter.png" width=55%>
 </p>
 
 ## Rules 📋
