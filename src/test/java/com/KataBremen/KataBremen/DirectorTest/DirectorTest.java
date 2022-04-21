@@ -36,6 +36,7 @@ public class DirectorTest {
         this.chorus.add(cat);
         this.chorus.add(donkey);
 
+        director.orderStartSingChorus();
         director.orderStopSingChorus();
 
         assertEquals("The cat Tobi isn't singing", chorus.get(0).message());
