@@ -29,7 +29,13 @@ public class BremenTest {
     @Test
     void CatsCanSing(){
         Cat cat = new Cat();
+        assertTrue(cat.isSinging());
+    }
 
+    @Test
+    void CatsCanStartSinging() {
+        Cat cat = new Cat("Tobi", "Miau");
+        cat.startSinging();
         assertTrue(cat.isSinging());
     }
 
