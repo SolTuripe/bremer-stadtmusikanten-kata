@@ -16,6 +16,10 @@ public class Director {
     public Director() {
     }
 
+    public ArrayList getChorus() {
+        return this.chorus;
+    }
+
     public void orderStartSingChorus() {
         for (Singing singer : chorus) {
             singer.startSinging();

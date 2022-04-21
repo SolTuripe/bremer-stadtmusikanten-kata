@@ -9,10 +9,19 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 public class DirectorTest {
 
     private ArrayList<Singing> chorus = new ArrayList();
+
+    @Test
+    void TheDirectorCanHaveAChorus() {
+        Director director = new Director(chorus);
+
+        assertThat(director.getChorus(), equalTo(chorus));
+    }
 
     @Test
     void TheDirectorOrdersTheChorusToSing() {

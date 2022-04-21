@@ -69,5 +69,4 @@ public class ComicCharacterTest {
         assertThat(donkey.isSinging(), equalTo(false));
         assertThat(scarletWitch.isSinging(), equalTo(false));
     }
-
 }
