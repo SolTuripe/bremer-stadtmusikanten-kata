@@ -3,14 +3,14 @@
 The goal of this kata is also to practice the basic principles of OOP such as: Abstraction, Encapsulation, Inheritance, Polymorphism and Interfaces using TDD 
 
 🚥 Test → Red → Green → Refactor 🔁
-## Develop 📌
+## Develop 🎼
 
 ```
 Start a project at Spring Initializr
 Or clone/fork this repo
 Run the tests to see them pass!
 ```
-## Tests ✅
+## Tests 🎵
 
 ### Animal Test
 <p align="center">
